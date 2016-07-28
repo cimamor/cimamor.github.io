@@ -31,7 +31,7 @@ function insertNewItemListNoteHTML(guid, titulo, color)
 
 function insertFormularioHTML()
 {
-	$('#seleccionNotaFormulario').append('<div id="notaFormulario"><section name="formulario" class="formularioNota"><form id="formularioNotaId" method="post" onsubmit="return accionSubmitFormulario(this)"><label class="labelForm">Nueva Nota</label><input id="titleNote" type="text" maxlength="25" class="inputTitle" value="" placeholder="Título de la nota" pattern="^([a-zA-Z0-9 _%+-\¡!\¿\?ªº,.:áéíóúÁÉÍÓÚÑñ\(\))]){1,25}$" required></input><textArea id="messageNote" class="textAreaMessage" placeholder="Mensaje de la nota" pattern="^([a-zA-Z0-9 _%+-\¡!\¿\?ªº,.:áéíóúÁÉÍÓÚÑñ\(\))])*$" required></textArea><input id="colorNote" type="color" class="colorNota" value="#d698f3"> Color de la Nota</input><input type="image" src="img/icono_save.png" class="inputSaveNota" id="saveNotaId" onclick=""/></form>');
+	$('#seleccionNotaFormulario').append('<div id="notaFormulario"><section name="formulario" class="formularioNota"><form id="formularioNotaId" method="post" onsubmit="return accionSubmitFormulario(this)"><label class="labelForm">Nueva Nota</label><input id="titleNote" type="text" maxlength="25" class="inputTitle" value="" placeholder="Titulo de la nota" pattern="^([a-zA-Z0-9 _%+-\¡!\¿\?ªº,.:áéíóúÁÉÍÓÚÑñ\(\))]){1,25}$" required></input><textArea id="messageNote" class="textAreaMessage" placeholder="Mensaje de la nota" pattern="^([a-zA-Z0-9 _%+-\¡!\¿\?ªº,.:áéíóúÁÉÍÓÚÑñ\(\))])*$" required></textArea><input id="colorNote" type="color" class="colorNota" value="#d698f3"> Color de la Nota</input><input type="image" src="img/icono_save.png" class="inputSaveNota" id="saveNotaId" onclick=""/></form>');
 }
 
 function removeAllItemListNoteHTML()
