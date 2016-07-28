@@ -1,0 +1,44 @@
+<!DOCTYPE html lang="es">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<head>
+	<title>NotePad</title>
+	<meta charset="ISO-5589-2">
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/json2.js"></script>
+	<script type="text/javascript" src="js/clases.js"></script>
+	<script type="text/javascript" src="js/utilidades.js"></script>
+</head>
+<body onload="accionLoad()">
+	<noscript>Esta aplicación requiere que JavaScript esté activado en el navegador para que funcione correctamente y sea accesible.</noscript>
+	<div class="container">
+		<div id="divLeft" class="divLeft">
+			<section name="operaciones" class="operaciones" role="region">
+				<h1 class="title" tabindex="0">Mis Notas</h1>
+				<div class="nuevaNota" id="nuevaNotaId" tabindex="0" onclick="accionNuevaNota()" onkeydown="return AccionNuevaNotaPorTeclado(event)" role="button">
+					<img src="img/icono_mas.png" alt="Nueva Nota" class="nuevaNotaImg"/>
+					<h2> Nueva nota</h2>
+				</div>
+			</section>
+			<section name="listadoNotas" id="listadoNotas" role="region">
+			</section>
+		</div>
+		<div id="divRight" class="divRight">
+			<section name="seleccionNotaFormulario" id="seleccionNotaFormulario">
+			</section>
+			<section name="seleccionNotaPrincipal" id="seleccionNotaPrincipal">
+			</section>
+		</div>
+	</div>
+
+
+	<script>
+	  function AccionNuevaNotaPorTeclado(event) {
+	    if (event.keyCode == 32 || 
+	        event.keyCode == 13)  
+	      accionNuevaNota();
+	  }
+	</script>
+</body>

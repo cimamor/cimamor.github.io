@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<head>
+	<title></title>
+	<meta charset="ISO-5589-2">
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/json2.js"></script>
+	<script type="text/javascript" src="js/clases.js"></script>
+	<script type="text/javascript" src="js/utilidades.js"></script>
+</head>
+<body onload="accionLoad()">
+<div id="container" class="container">
+	<div id="container" class="divLeft">
+		<section name="operaciones" class="operaciones">
+			<h2 class="title">Mis Notas</h2>
+			<div class="nuevaNota" id="nuevaNotaId" onclick="accionNuevaNota()">
+				<img src="img/icono_mas.png" class="nuevaNotaImg"/>
+				<h2>Nueva nota</h2>
+			</div>
+		</section>
+		<section name="listadoNotas" id="listadoNotas">
+		</section>
+	</div>
+	<div id="container" class="divRight">
+		<section name="seleccionNotaFormulario" id="seleccionNotaFormulario">
+		</section>
+		<section name="seleccionNotaPrincipal" id="seleccionNotaPrincipal">
+		</section>
+	</div>
+</div>
+</body>
